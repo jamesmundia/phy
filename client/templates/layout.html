@@ -1,6 +1,4 @@
-<head>
-  <title>physiO</title>
-</head>
+<template name="layout">
 <body>
   <div class="container">
     <header class="navbar navbar-default" role="navigation">
@@ -8,8 +6,9 @@
         <a class="navbar-brand" href="/">physiO</a>
       </div>
     </header>
-    <div id="main">
-      {{> injuryList}}
-    </div>
+    <main>
+      {{> Template.dynamic template=content}}
+  </main>
   </div>
 </body>
+</template>
