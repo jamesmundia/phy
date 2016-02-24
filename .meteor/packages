@@ -21,3 +21,5 @@ twbs:bootstrap
 aldeed:collection2
 kadira:flow-router
 kadira:blaze-layout
+zimme:active-route
+arillo:flow-router-helpers

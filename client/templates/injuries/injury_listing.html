@@ -1,7 +1,7 @@
 <template name="injuryListing">
   <div class="injury">
     <div class="injury-content">
-      <h3>{{player}} - <span><a href={{pathForPost}}>{{injury}}</a>
+      <h3>{{player}} - <span><a href="{{pathFor '/injuries/:id' id=_id}}">{{injury}}</a>
       </span></h3>
     </div>
   </div>
