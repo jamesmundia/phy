@@ -1,18 +1,15 @@
+Template.injuryPage.onCreated(function(){
+	var self = this;
+	self.autorun(function(){
+	var id = FlowRouter.getParam('id');
+		self.subscribe('injuryPage', id);
+	}); // prevents subsription to previous items, performative change here - LUT
+});
+
 Template.injuryPage.helpers({
-	injury: function() {
+	injury: ()=> {
 		var id = FlowRouter.getParam('id')
 	  	return Injuries.findOne({_id: id});
-	 },
-	 log: function(){
-	 	console.log(this);
 	 }
 }); 
 
-/*
-Template.injuryPage.onCreated(function() {
-  this.getInjuryId = () => FlowRouter.getParam('_id');
-
-  this.autorun(() => {
-    this.subscribe('injuries', this.getInjuryId());
-  });
-}); */
