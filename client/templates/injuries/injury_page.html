@@ -1,12 +1,10 @@
  <template name="injuryPage">
   <div class="container">
-		{{#with injury}}
-  		<p>{{player}}</p>
 
-  		<p>{{injury}}</p>
-  		{{/with}}
+  		<h2>{{injury.player}}</h2>
 
-	
-  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eveniet tempora distinctio placeat, ipsam, delectus similique vitae nesciunt, voluptate mollitia quos officia accusamus sit eligendi quasi, voluptatum eum. Incidunt, aliquam!</p>
+  		<h3>{{injury.injury}} - {{injury.injurydate}} </h3>
+
+  		<p>{{injury.notes}}</p>
   </div>
 </template>	
