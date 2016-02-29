@@ -1,3 +1,5 @@
+/* 
+
 .grid-block, .main, .injury, .comments li, .comment-form {
   background: #fff;
   border-radius: 3px;
@@ -20,9 +22,11 @@ body {
   width: 100%;
 }
 
+
 .navbar {
   margin-bottom: 10px; }
-  /* line 32, ../sass/style.scss */
+
+
   .navbar .navbar-inner {
     border-radius: 0px 0px 3px 3px; }
 
@@ -30,8 +34,7 @@ body {
   height: 300px; }
 
 .injury {
-  /* For modern browsers */
-  /* For IE 6/7 (trigger hasLayout) */
+  
   *zoom: 1;
   position: relative;
   opacity: 1; }
@@ -158,3 +161,4 @@ body {
   margin-bottom: 5px;
   pointer-events: auto;
 }
+*/
