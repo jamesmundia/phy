@@ -9,7 +9,7 @@
 
   		<h4>Insert Rehab Exercise</h4>
 		
-		  {{#autoForm schema="Rehab" id="insertRehabForm" type="insert"}}
+		  {{#autoForm collection="Injuries" schema="Rehab" id="insertRehabForm" type="insert"}}
 		  <fieldset>
 		  	<legend>
 				{{> afQuickField name='exercise' options=options}}
@@ -23,6 +23,12 @@
 		  </fieldset>
 		   <button type="submit" class="btn btn-primary">Insert</button>
   				{{/autoForm}}
+
+		<h4>Rehab Plan</h4>
+		{{#each rehab}}
+		<li>{{exercise}} - {{sets}} x {{duration}} - {{date}}</li>
+		<p>{{notes}}</p>
+	 {{/each}}  				
 		  
   </div>
 </template>	
