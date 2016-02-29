@@ -8,18 +8,21 @@
   		<p>{{injury.notes}}</p>
 
   		<h4>Insert Rehab Exercise</h4>
+		
+		  {{#autoForm schema="Rehab" id="insertRehabForm" type="insert"}}
+		  <fieldset>
+		  	<legend>
+				{{> afQuickField name='exercise' options=options}}
+				{{> afQuickField name='sets'}}
+				{{> afQuickField name='duration'}}
+				{{> afQuickField name='date'}}
+			    {{> afQuickField name='notes' rows=6}}
 
-		<p>
-			
-	  		{{#autoForm schema="Rehab" id="insertRehabExercise" type="insert"}}
-	  		<fieldset>
-	  		<legend>Insert A Rehab Exercise</legend>	
-	  		{{> afFieldInput name="Rehab Exercise" options=intervalRunOptions}}
-	  		{{> afFieldInput name="volume"}}
-	  		{{> afFieldInput name="date"}}
-	  		</fieldset>
-	  		 <button type="submit" class="btn btn-primary">Insert Rehab Exercise</button>
-  			{{/autoForm}}
-		</p>
+		  	</legend>
+
+		  </fieldset>
+		   <button type="submit" class="btn btn-primary">Insert</button>
+  				{{/autoForm}}
+		  
   </div>
 </template>	
