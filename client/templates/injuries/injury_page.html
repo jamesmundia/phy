@@ -6,5 +6,20 @@
   		<h3>{{injury.injury}} - {{injury.injurydate}} </h3>
 
   		<p>{{injury.notes}}</p>
+
+  		<h4>Insert Rehab Exercise</h4>
+
+		<p>
+			
+	  		{{#autoForm schema="Rehab" id="insertRehabExercise" type="insert"}}
+	  		<fieldset>
+	  		<legend>Insert A Rehab Exercise</legend>	
+	  		{{> afFieldInput name="Rehab Exercise" options=intervalRunOptions}}
+	  		{{> afFieldInput name="volume"}}
+	  		{{> afFieldInput name="date"}}
+	  		</fieldset>
+	  		 <button type="submit" class="btn btn-primary">Insert Rehab Exercise</button>
+  			{{/autoForm}}
+		</p>
   </div>
 </template>	

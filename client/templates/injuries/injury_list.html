@@ -1,5 +1,10 @@
  <template name="injuryList">
 	<div class="container">
+
+	<h2>Add Injury</h2>
+
+{{> quickForm collection="Injuries" id="insertInjuryForm" type="insert"}}
+
     {{#each injuries}}
       {{> injuryListing}}
 {{/each}}
