@@ -9,6 +9,11 @@ Template.injuryPage.onCreated(function(){
 });
 
 Template.injuryPage.helpers({
+  getInjury: function () {
+    var injuryId = FlowRouter.getParam('id');
+    var inj = Injuries.findOne(injuryId) || {};
+    return inj;
+  },
 	injury: ()=> {
 		var id = FlowRouter.getParam('id')
 	  	return Injuries.findOne({_id: id});

@@ -26,3 +26,5 @@ arillo:flow-router-helpers
 check
 msavin:mongol
 aldeed:autoform
+ian:accounts-ui-bootstrap-3
+accounts-password
