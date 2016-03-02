@@ -8,6 +8,12 @@ Template.injuryPage.onCreated(function(){
 	}); 
 });
 
+Template.injuryPage.events({ 
+  'submit form': function(e) {
+  e.preventDefault();
+  }
+});
+
 Template.injuryPage.helpers({
   getInjury: function () {
     var injuryId = FlowRouter.getParam('id');

@@ -16,7 +16,7 @@
 				{{> afQuickField name='sets'}}
 				{{> afQuickField name='duration'}}
 				{{> afQuickField name='date'}}
-			    {{> afQuickField name='notes' rows=6}}
+			    {{> afQuickField name='rehabnotes' rows=6}}
 
 		  </fieldset>
 		   <button type="submit" class="btn btn-primary">Insert</button>
@@ -25,7 +25,7 @@
 		<h4>Rehab Plan</h4>
 		{{#with injury}}
 		<li>{{injury.exercise}} - {{injury.sets}} x {{injury.duration}} - {{injury.date}}</li>
-		<p>{{injury.notes}}</p>
+		<p>{{injury.rehabnotes}}</p>
 	 {{/with}}  				
 		  
   </div>

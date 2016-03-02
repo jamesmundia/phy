@@ -1,12 +1,13 @@
  <template name="injuryList">
 	<div class="container">
 
-	<h2>Add Injury</h2>
-
-{{> quickForm collection="Injuries" id="insertInjuryForm" type="insert"}}
-
     {{#each injuries}}
       {{> injuryListing}}
 {{/each}}
+
+<h4>Add Injury</h4>
+
+{{> quickForm collection="Injuries" id="insertInjuryForm" type="insert"}}
+
   </div>
 </template>
