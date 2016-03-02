@@ -3,5 +3,10 @@
     {{#each injuries}}
       {{> injuryListing}}
 {{/each}}
+
+<h4>Add Injury</h4>
+
+{{> quickForm collection="Injuries" id="insertInjuryForm" type="insert"}}
+
   </div>
 </template>
